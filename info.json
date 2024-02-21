@@ -1,0 +1,12 @@
+{
+	"name": "Simplified_Realistic_Electric_Trains",
+	"version": "0.0.1",
+	"title": "Simplified Realistic Electric Trains",
+	"author": "Alco",
+	"contact": "",
+	"factorio_version": "1.1",
+	"dependencies": [
+		"base >= 1.1"		
+	],
+	"description": "This mod adds electric trains which attach to a electric network and provide realistic power dynamics"
+}

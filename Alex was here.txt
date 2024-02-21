@@ -1,0 +1,15 @@
+-- ignore on build
+On build
+    If powerpole:
+        get all rail in wire reach
+        Designate as "powered"
+
+On tick
+    If train is Accelerating
+        Draw Power
+    
+    If train is Breaking
+        Generate Power
+
+    If Train is near Powerpole && Power pole can reach
+        add Train to network
