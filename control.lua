@@ -8,9 +8,9 @@ script.on_init(
 	end
 )
 
--- script.on_event(defines.events.on_tick,
--- 	require("logic.events.on_tick")
--- )
+script.on_event(defines.events.on_tick,
+	require("logic.events.on_tick")
+)
 
 script.on_event({
 		defines.events.on_built_entity,
@@ -21,13 +21,13 @@ script.on_event({
 	require("Logic.events.on_build")
 )
 
-commands.add_command("print_loco_count", 
+commands.add_command("print_loco_count",
 	"Prints number of Locomotives registered",
 	function()
-		local count = 0
+				local count = 0
 		for _, _ in pairs(global.locomotives) do
 			count = count + 1
-		end
-		game.print(string.format("Total Trains: %d", count))
+					end
+game.print(string.format("Total Trains: %d", count))
 	end
 )
